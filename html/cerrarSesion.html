@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerrando Sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #BBBE64; /* Establecer el color de fondo deseado */
+        }
+        .loader {
+            font-size: 4rem;
+            animation: spin 1s infinite linear;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="loader" class="loader">
+        <i class="fas fa-spinner"></i>
+    </div>
+
+    <script>
+        // Realizar cualquier tarea de cierre de sesión aquí...
+
+        // Agregar un controlador de eventos para esperar a que la página siguiente haya cargado
+        window.addEventListener('load', function() {
+            // Redirigir después de cargar la página
+            sessionStorage.setItem('nombreUsuario', '');
+            window.location.href = '../html/index.html';
+        });
+    </script>
+</body>
+</html>
+

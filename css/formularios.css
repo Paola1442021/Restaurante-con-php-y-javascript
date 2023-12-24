@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root {
+    --color-amarillo: rgb(228, 166, 19);
+    --color-naranja: #d56e33;
+    --color-azul: #2f3ba4;
+    --color-placeholder:#EEE5E9;
+    --colorFondo:#BBBE64;
+    --menuFuente:font-family: 'Barlow Condensed', sans-serif;
+  }
+#logo{
+    font-family: 'Titan One', sans-serif;
+    color: var(--color-azul);
+    font-size: 2vw;
+}
+span{
+    color: var(--color-amarillo);
+}
+#menu{
+    background-color: var(--color-mostazas);
+}
+/*<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
+
+font-family: 'Passion One', sans-serif;*/
+li{
+    font-family: var(--menuFuente);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 90%;
+    letter-spacing: 2px;
+    margin: 0 3px;
+color: white;
+}
+li:hover{
+  border-bottom: white 5px solid;
+}
+header{
+    background-color: var(--color-naranja);
+}
+.btn-nav{
+    background-color: rgb(207, 120, 70);
+    border: 0;
+    padding: 3%;
+    color: white;
+    font-family: var(--menuFuente);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+input.form-control {
+    background-color: rgb(207, 120, 70);
+    border: 0;
+    color: white;
+}
+input.form-control::placeholder {
+    color: #eee5e5; /* Cambia #999 por el color que desees para el marcador de posición */
+}
+form{
+
+    background-color: var(--color-placeholder);
+    padding: 8% 0;
+    border-radius: 10%;
+
+}
+#formulario {
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    height: 100vh; /* Ajusta la altura del contenedor */
+    
+}
+HTML {
+  background-color: var(--color-naranja);
+
+  
+}
+button{
+    background-color: var(--color-naranja);
+    color: var(--color-placeholder);
+    border: none;
+    
+}
+
+main{
+    background-color:var(--colorFondo);
+}
